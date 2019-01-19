@@ -1,0 +1,49 @@
+<div class='full dark'>
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      {% include section-title.html small_title="contact" title="Get in touch" %}
+    </div>
+    <div class='large-8 medium-8 columns'>
+      <div class='form centered-text'>
+        <div class='row'>
+          <form id='contact_form' class='dark' method='POST'>
+            <div class='large-12 columns'>
+              <p id='thanks'>
+                Thanks for contacting us, we'll be in touch soon!
+              </p>
+            </div>
+            <div class='medium-12 columns'>
+              <input class='required' name='name' placeholder='NAME' type='text'>
+              <input class='required email' name='email' placeholder='EMAIL' type='text'>
+              <input class='required' name='subject' placeholder='SUBJECT' type='text'>
+              <textarea class='required' name='message' placeholder='MESSAGE'></textarea>
+              <input name="recipient" type="hidden" value="{{ site.email }}" />
+              <div class='spacing'></div>
+              <input class='button boxed yellow' type='submit'>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class='large-4 medium-4 columns'>
+      <div class='border-wrapper centered-text'>
+        <div class='borders'>
+          <div class='top'></div>
+          <div class='right'></div>
+          <div class='bottom'></div>
+          <div class='left'></div>
+        </div>
+        <div class='contact-details'>
+          <div class='content'>
+            <h4>Studio</h4>
+            <p>37 West 26th Street, 9th Floor / Between 6th Ave & Broadway</p>
+            <h4>Phone</h4>
+            <p>(646) 243 9793</p>
+            <h4>Email</h4>
+            <p>dance@ballroomboutique.net</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

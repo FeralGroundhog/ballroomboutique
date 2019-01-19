@@ -1,0 +1,115 @@
+<div class="full no-padding dark">
+  <div id="footer" class='centered-text'>
+    <div class="row">
+      <div class="large-6 medium-6 small-12 columns left" id="footer-left">
+        <div class="row">
+          <div class="large-12 columns">
+            <img src='{{ "/assets/images/ballroomboutique/BB_footer.png" | relative_url }}' alt="Ballroom Boutique">
+            <div class="three spacing"></div>
+          </div>
+          <div class="large-12 columns footer-contact">
+            <p>37 West 26th Street, 9th Floor / Between 6th Ave & Broadway<br>
+            Tel: <a href="tel:+16462439793">646 243 9793</a><br>
+            Email: <a href="mailto:dance@ballroomboutique.net">dance@ballroomboutique.net</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="large-6 medium-6 small-12 columns right" id="footer-right">
+        <div class="row">
+          <div class="large-6 small-6 columns centered-text">
+            <a href="https://www.theknot.com/marketplace/ballroom-boutique-dance-company-new-york-ny-1048513">
+              <img src='{{ "/assets/images/ballroomboutique/footer-knot.png" | relative_url }}' alt="As Seen on The Knot">
+            </a>
+            <div class="three spacing"></div>
+          </div>
+          <div class="large-6 small-6 columns centered-text">
+            <a href="https://www.weddingwire.com/biz/ballroom-boutique-dance-company-new-york/b6ae3fcf70f16291.html">
+              <img src='{{ "/assets/images/ballroomboutique/footer-wedding-wire.png" | relative_url }}' alt="Wedding Wire Rated Business">
+            </a>
+            <div class="three spacing"></div>
+          </div>
+        </div>
+
+        <div class="row centered-text">
+          <div class="large-12 columns">
+            <h3>Sign up for our newsletter!</h3>
+            <form id="newsletter_form" class="dark" method="POST" novalidate="novalidate">
+              <input class="required email" name="email" placeholder="EMAIL" type="text">
+              <input class="button" type="submit">
+            </form>
+          </div>
+          <div class="large-12 columns">
+            <div class='row'>
+              <div class='large-4 small-4 columns'>
+                <div class='big-social'>
+                  <a href='http://facebook.com'>
+                    <i class='fa fa-facebook'></i>
+                  </a>
+                </div>
+              </div>
+              <div class='large-4 small-4 columns'>
+                <div class='big-social'>
+                  <a href='http://instagram.com'>
+                    <i class='fa fa-instagram'></i>
+                  </a>
+                </div>
+              </div>
+              <div class='large-4 small-4 columns'>
+                <div class='big-social'>
+                  <a href='http://skype.com'>
+                    <i class='fa fa-skype'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="two spacing"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns centered-text" id="copyright">
+        <div class="row">
+          <div class="large-12 columns">
+            <h4>©{{site.time | date: "%Y" }} Ballroom <span class="gold">/</span> Boutique. All rights reserved.</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <ul class='footer-nav'>
+            {% for item in site.data.nav %}
+              <li>
+                {% assign first = item.path | truncate:1,'' %}
+
+                {% if first != '#' %}
+                  {% assign href = item.path | relative_url %}
+                {% elsif page.onepage %}
+                  {% assign href = item.path %}
+                {% else %}
+                  {% assign href = 'index.html' | append:item.path | relative_url %}
+                {% endif %}
+
+                <a href="{{ href }}">{{ item.name }}</a>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% for path in site.data.assets.js %}
+
+  {%- if path contains '://' -%}
+    {%- assign src = path -%}
+  {%- else -%}
+    {%- assign src = path | relative_url -%}
+  {%- endif -%}
+
+  <script src="{{ src }}" type="text/javascript"></script>
+{% endfor %}
