@@ -1553,7 +1553,8 @@ p.small-title {
     text-transform: uppercase;
     color: #ccc;
     letter-spacing: 2px;
-    background: url(../images/@stock/li-item.png) left center no-repeat; }
+    /* background: url(../images/@stock/li-item.png) left center no-repeat; */
+    background: left center no-repeat; }
   .fullscreen .layer ul li:first-child {
     background: none; }
 .fullscreen .layer.alt {
