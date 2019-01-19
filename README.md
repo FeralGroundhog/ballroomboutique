@@ -13,10 +13,11 @@ Jekyll-based static site for Ballroom Boutique, a NYC-based ballroom dance compa
 
 
 ## PROFILE
-- replace Donatas' profile pic in desktop with the new one he provided
+- TODO replace Donatas' profile pic in desktop with the new one he provided
 
  
 ## GALLERY
-- TODO replace remaining demo pictures with real clients
-- TODO adjust text size in mobile view to display dates correctly
+- DONE replace remaining demo pictures with real clients
+- DONE adjust text size in mobile view to display dates correctly
 - TODO Setup third description item for type of dance, possibly next to or below date
+..- Missing dance style information
