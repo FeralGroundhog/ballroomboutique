@@ -1,16 +1,17 @@
 ---
-thumbnail: "/assets/images/ballroomboutique/gallery/client1-and-client2/client-demo-thumb.jpg"
+thumbnail: "/assets/images/ballroomboutique/gallery/eugenia-and-john/eugenia-john-thumb.jpg"
 slides:
-  - "/assets/images/ballroomboutique/gallery/client1-and-client2/client-demo-1.jpg"
-  - "/assets/images/ballroomboutique/gallery/client1-and-client2/client-demo-2.jpg"
-  - "/assets/images/ballroomboutique/gallery/client1-and-client2/client-demo-3.jpg"
-  - "/assets/images/ballroomboutique/gallery/client1-and-client2/client-demo-4.jpg"
+  - "/assets/images/ballroomboutique/gallery/eugenia-and-john/eugenia-john-1.jpg"
+  - "/assets/images/ballroomboutique/gallery/eugenia-and-john/eugenia-john-2.jpg"
+  - "/assets/images/ballroomboutique/gallery/eugenia-and-john/eugenia-john-3.jpg"
+  - "/assets/images/ballroomboutique/gallery/eugenia-and-john/eugenia-john-4.jpg"
+  - "/assets/images/ballroomboutique/gallery/eugenia-and-john/eugenia-john-5.jpg"
+  - "/assets/images/ballroomboutique/gallery/eugenia-and-john/eugenia-john-6.jpg"
 categories:
   - First Dance
-  - Group Choreography
-date: July 2013  
+date: March 2011  
 link:
-  text: 'Watch Video'
+  text: 'Watch video'
   url: 'https://www.weddingwire.com/biz/ballroom-boutique-dance-company-new-york/b6ae3fcf70f16291.html'
 ---
 

@@ -1,15 +1,15 @@
 ---
-thumbnail: "/assets/images/ballroomboutique/gallery/client3-and-client4/client-demo-thumb.jpg"
+thumbnail: "/assets/images/ballroomboutique/gallery/sharon-and-scott/sharon-scott-thumb.jpg"
 slides:
-  - "/assets/images/ballroomboutique/gallery/client3-and-client4/client-demo-1.jpg"
-  - "/assets/images/ballroomboutique/gallery/client3-and-client4/client-demo-2.jpg"
-  - "/assets/images/ballroomboutique/gallery/client3-and-client4/client-demo-3.jpg"
-  - "/assets/images/ballroomboutique/gallery/client3-and-client4/client-demo-4.jpg"
+  - "/assets/images/ballroomboutique/gallery/sharon-and-scott/sharon-scott-1.jpg"
+  - "/assets/images/ballroomboutique/gallery/sharon-and-scott/sharon-scott-2.jpg"
+  - "/assets/images/ballroomboutique/gallery/sharon-and-scott/sharon-scott-3.jpg"
+  - "/assets/images/ballroomboutique/gallery/sharon-and-scott/sharon-scott-4.jpg"
 categories:
   - First Dance
-date: March 2011  
+date: Sept 2018  
 link:
-  text: 'Watch video'
+  text: 'Watch Video'
   url: 'https://www.weddingwire.com/biz/ballroom-boutique-dance-company-new-york/b6ae3fcf70f16291.html'
 ---
 
