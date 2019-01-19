@@ -1,0 +1,61 @@
+<div class="full no-padding dark">
+  <div id="footer" class='centered-text'>
+    <div class="row">
+      <div class="large-6 columns left" id="footer-left">
+        <img src='{{ "/assets/images/ballroomboutique/BB_footer.png" | relative_url }}' alt="Ballroom Boutique">
+      </div>
+      <div class="large-6 medium-12 small-12 columns right" id="footer-right">
+        <div class="row">
+          <div class="large-12 columns">
+            <h3>Sign up for our newsletter!</h3>
+            <form id="newsletter_form" class="dark" method="POST" novalidate="novalidate">
+              <input class="required email" name="email" placeholder="EMAIL" type="text">
+              <input class="button" type="submit">
+            </form>
+          </div>
+          <div class="large-12 columns">
+            <div class='row'>
+              <div class='large-4 small-4 columns'>
+                <div class='big-social'>
+                  <a href='http://facebook.com'>
+                    <i class='fa fa-facebook'></i>
+                  </a>
+                </div>
+              </div>
+              <div class='large-4 small-4 columns'>
+                <div class='big-social'>
+                  <a href='http://instagram.com'>
+                    <i class='fa fa-instagram'></i>
+                  </a>
+                </div>
+              </div>
+              <div class='large-4 small-4 columns'>
+                <div class='big-social'>
+                  <a href='http://skype.com'>
+                    <i class='fa fa-skype'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='large-12 columns'>
+        <h4 id="copyright">©{{site.time | date: "%Y" }} Ballroom <span class="gold">/</span> Boutique. All rights reserved.</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% for path in site.data.assets.js %}
+
+  {%- if path contains '://' -%}
+    {%- assign src = path -%}
+  {%- else -%}
+    {%- assign src = path | relative_url -%}
+  {%- endif -%}
+
+  <script src="{{ src }}" type="text/javascript"></script>
+{% endfor %}
