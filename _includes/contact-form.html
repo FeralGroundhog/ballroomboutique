@@ -1,0 +1,27 @@
+<div class='full dark'>
+  <div class='row'>
+    <div class='large-12 columns large-centered'>
+      {% include section-title.html small_title="contact" title="Get in touch" %}
+    </div>
+    <div class='large-12 medium-12 columns'>
+      <div class='form centered-text'>
+        <div class='row'>
+          <form id='contact_form' class='dark' method='POST'>
+            <div class='large-12 columns'>
+              <p id='thanks'>Thanks for contacting us. We'll be in touch soon!</p>
+            </div>
+            <div class='large-12 columns'>
+              <input class='required' name='name' placeholder='NAME' type='text' required>
+              <input class='required email' name='email' placeholder='EMAIL' type='text' required>
+              <input class='required' name='_subject' placeholder='SUBJECT' type='hidden' value="Ballroom Boutique: Contact Submission">
+              <textarea class='required' name='message' placeholder='MESSAGE' required></textarea>
+              <input name="recipient" type="hidden" value="{{ site.email }}" />
+              <div class='spacing'></div>
+              <input class='button boxed yellow' type='submit' value="SEND">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      {% assign title = page.title | upcase %}
+      {% include section-title.html title=title %}
+    </div>
+  </div>
+</div>
+<div class='full no-padding'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for slide in page.slides %}
+            <div class='slide'>
+              <img width="1120" height="600" alt="" src="{{ slide | relative_url }}" />
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-8 columns'>
+      <h3>{{ page.title }}</h3>
+      <ul class='info'>
+        {% if page.date %}
+          <li>
+            <strong>Date:</strong>
+            {{ page.date | date:"%B %Y" }}
+          </li>
+        {% endif %}
+      </ul>
+      {{ content }}
+      <div class='spacing'></div>
+      {% if page.link %}
+        {% if page.link.url contains '://' %}
+          {% assign href = page.link.url %}
+        {% else %}
+          {% assign href = page.link.url | relative_url %}
+        {% endif %}
+        <a class='button small' href='{{ href }}'>{{ page.link.text }}</a>
+      {% endif %}
+      <div class='spacing'></div>
+      <h3 class="thin">Read about another experience</h3>
+      <ul class="info">
+        <li>
+          {% if page.previous %}
+          <a href='{{ page.previous.url | relative_url }}' title='previous'>
+            <i class='icon-left-open'></i>
+          </a>
+          {% endif %}
+          {% assign nav_obj = site.data.nav | where:'section_id','works' | first %}
+          <a href='{{ "index.html" | append:nav_obj.path | relative_url }}' title='back to work list'>
+            <i>Homepage</i>
+          </a>
+          {% if page.next %}
+            <a href='{{ page.next.url | relative_url }}' title='next'>
+              <i class='icon-right-open'></i>
+            </a>
+          {% endif %}
+        </li>
+    </ul>
+    <div class='spacing'></div>
+    </div>
+  </div>
+</div>
+
+
+{% include contact-form.html %}
