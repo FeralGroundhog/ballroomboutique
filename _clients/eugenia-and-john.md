@@ -9,7 +9,7 @@ slides:
   - "/assets/images/ballroomboutique/gallery/eugenia-and-john/eugenia-john-6.jpg"
 categories:
   - First Dance
-date: March 2011  
+date: July 2017  
 link:
   text: 'Watch video'
   url: 'https://www.weddingwire.com/biz/ballroom-boutique-dance-company-new-york/b6ae3fcf70f16291.html'
