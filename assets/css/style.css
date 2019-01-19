@@ -4816,6 +4816,8 @@ body {
     width: 100%;
     margin: 0; }
 
+  #client-gallery-thumbs ul.gallery li div.thumb-info h3 { font-size: 18px; margin-bottom: 10px; }
+
   .fullscreen .layer {
     /* top: 25%; */
     padding: 20px;
