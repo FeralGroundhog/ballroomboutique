@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url("../fonts/OpenSans-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Leitura News';
+  src: url("../fonts/LeituraNews-Roman.otf");
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Leitura News';
+  src: url("../fonts/LeituraNews-Italic.otf");
+  font-style: italic;
+}

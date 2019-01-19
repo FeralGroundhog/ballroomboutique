@@ -1,0 +1,56 @@
+{% if page.onepage %}
+  {% assign classname= '' %}
+{% else %}
+  {% assign classname='' %}
+{% endif %}
+
+<div class='transparent fullwidth white fixed contain-to-grid {{ classname }}'>
+  <nav class='top-bar onepage' data-options='' data-topbar=''>
+    <ul class='title-area'>
+      <li class='name'>
+        <h1>
+          <a href='{{ 'index.html' | relative_url }}'>
+            <img width="181" height="192" alt="Ballroom Boutique" src="{{ "/assets/images/BB_logo-192.png" | relative_url }}" />
+          </a>
+        </h1>
+      </li>
+      <li class='badge'>
+        <a href="https://www.theknot.com/marketplace/ballroom-boutique-dance-company-new-york-ny-1048513">
+          <img src='{{ "/assets/images/ballroomboutique/footer-knot.png" | relative_url }}' alt="As Seen on The Knot">
+        </a>
+        <a href="https://www.theknot.com/marketplace/ballroom-boutique-dance-company-new-york-ny-1048513">
+          <img src='{{ "/assets/images/ballroomboutique/footer-knot-best.png" | relative_url }}' alt="Knot Best of 2019">
+        </a>
+        <a href="https://www.weddingwire.com/biz/ballroom-boutique-dance-company-new-york/b6ae3fcf70f16291.html">
+          <img src='{{ "/assets/images/ballroomboutique/footer-wedding-wire.png" | relative_url }}' alt="Wedding Wire Rated Business">
+        </a>
+      </li>
+    </ul>
+    <div id="menu-toggler" class="right">
+      <a href='#'>
+        <i class="fa fa-bars"></i>
+        Menu
+      </a>
+    </div>
+    <section class='top-bar-section closed'>
+      <ul class='right'>
+
+        {% for item in site.data.nav %}
+          <li>
+            {% assign first = item.path | truncate:1,'' %}
+
+            {% if first != '#' %}
+              {% assign href = item.path | relative_url %}
+            {% elsif page.onepage %}
+              {% assign href = item.path %}
+            {% else %}
+              {% assign href = 'index.html' | append:item.path | relative_url %}
+            {% endif %}
+
+            <a href="{{ href }}">{{ item.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </nav>
+</div>

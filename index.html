@@ -1,0 +1,181 @@
+---
+layout: default
+onepage: true
+
+main_slider:
+  - /assets/images/ballroomboutique/main-slider/main-slider-01.jpg
+  - /assets/images/ballroomboutique/main-slider/main-slider-02.jpg
+  - /assets/images/ballroomboutique/main-slider/main-slider-03.jpg
+  - /assets/images/ballroomboutique/main-slider/main-slider-04.jpg
+  - /assets/images/ballroomboutique/main-slider/main-slider-05.jpg
+
+clients:
+  - path: _clients/brit-and-john.md
+    style: wide
+  - path: _clients/jess-and-john.md
+  - path: _clients/marcin-and-elison.md
+  - path: _clients/demo1.md
+    style: wide
+  - path: _clients/demo2.md
+  - path: _clients/skye-and-tony.md
+
+---
+<a id='top'></a>
+<div class='full no-padding parallax'>
+  <div class='fullscreen homepage'>
+    <div class='mod modBoxedSlider' data-timeout='1500'>
+      <div class='slides'>
+        {% for image in page.main_slider %}
+          <div class='slide'>
+            <img alt="BALLROOM BOUTIQUE" src="{{ image | relative_url }}">
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div id="mobile-background"></div>
+    <div class="overlay"></div>
+    <div class='layer'>
+      <h1 class='thin' id="homepage-title">
+         <span class="fir">Take your wedding</span><br/>
+         <span class="sec">dance from ordinary to</span><br/>
+         <span class="thir">extraordinary!</span>
+      </h1>
+    </div>
+  </div>
+</div>
+
+
+<a id='about'></a>
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      <div class="section-title">
+        <p class="small-title">About Us</p>
+        <h2>
+          Spend more time in<br>
+          each other's arms
+        </h2>
+        <p class="big-size">
+          We teach people to dance for their wedding day, making sure they have an amazing <em>first dance</em>. Focusing on more than just steps, we ensure couples truly enjoy every step of the way
+        </p>
+        <p class="big-size">
+          We can help with any aspect of dancing at your wedding! In addition to your first dance, we can also create your father-daughter dance, wedding entrance choreography, and group wedding dances such as family or wedding party dances. Should you have something in mind, <em>talk to us!</em>
+        </p>
+        <div class="two spacing"></div>
+        <img src="{{ "/assets/images/ballroomboutique/ornament.png" | relative_url }}" alt="Ballroom Boutique">
+      </div>
+    </div>
+    <div class="two spacing"></div>
+  </div>
+</div>
+
+<a id='dance-promo'></a>
+<div class='full' style="background-color: #010425;">
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      <div class="section-title">
+        (video goes here)
+        <h3 class="white">"Learn to dance and use that skill for the rest of your life" <br>
+        <span class="gold">- Donatas Nacajus</span></h3>
+      </div>
+    </div>
+    <div class="two spacing"></div>
+  </div>
+</div>
+
+<a id='instructor'></a>
+<div class="full profile no-padding" style="background-image: url({{ "/assets/images/ballroomboutique/portrait-donatas.jpg" | relative_url }})">
+  <div class="right-half">
+    <div class="two spacing"></div>
+    <div class="section-header alt navy">
+      <h2>Donatas Nacajus</h2>
+    </div>
+    <p class="navy">Born in Lithuania, Donatas has been dancing since he was seven years old and has not stopped since. In his youth, he competed and won numberous dance competitions around the world, including the National Dance Sport Championship <em>(twice)</em>. In 1998, he represented the Lithuanian National Dance Team's World Youth Division Dance Sport Championship held in Russia.</p>
+    <p class="navy">Donatas is a graduate of the Academy of Physical Education in the fields of Ballroom & Latin Dance as well as Physical Education. He was taught in London by Michael and Vicky Barrs.</p>
+    <div class="two spacing"></div>
+  </div>
+</div>
+
+<div class="full profile flip no-padding" style="background-image: url({{ "/assets/images/ballroomboutique/portrait-ly.jpg" | relative_url }})">
+  <div class="left-half">
+    <div class="two spacing"></div>
+    <div class="section-header alt white">
+      <h2>Ly Nguyen Nacajus</h2>
+    </div>
+    <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+    <div class="two spacing"></div>
+  </div>
+</div>
+
+<a id='client-gallery'></a>
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      <div class="section-title">
+        <p class="small-title">Gallery</p>
+        <h2>Date nights with your <em>honey?</em></h2>
+        <p class="big-size">
+          Take the opportunity to spend more time in each other's arms while preparing for your <em>first dance!</em>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='full no-padding' id="client-gallery-thumbs">
+  <div class='mod modMasonryGallery'>
+    <ul class='gallery'>
+
+      {% for item in page.clients %}
+
+        {% assign client = site.clients | where:"path",item.path | first %}
+
+        {% if item.style == 'wide' %}
+          {% assign class = 'wide' %}
+          {% assign width = 1000 %}
+          {% assign height = 350 %}
+        {% else %}
+          {% assign class = '' %}
+          {% assign width = 500 %}
+          {% assign height = 350 %}
+        {% endif %}
+
+        <li class="{{class}}">
+          <!-- disable jinja-rendered linking <a href='client.url | relative_url'> -->
+            <a>
+            <img width="{{width}}" height="{{height}}" alt="" src="{{ client.thumbnail | relative_url }}" />
+            <div class='overlay'>
+              <div class='thumb-info'>
+                <h3>{{ client.title | upcase }}</h3>
+                <p>{{ client.date | date: "%B %Y" }}</p>
+              </div>
+            </div>
+          </a>
+        </li>
+
+      {% endfor %}
+
+    </ul>
+  </div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      <div class="section-title">
+        <p class="small-title">Social Dancing</p>
+        <h2>Welcome to an Amazing World of <em>Ballroom Dancing</em></h2>
+        <p class="big-size">
+          Our job and commitment as your teachers is to help your dance
+          ability grow so that you can enjoy the most wonderful feeling of<br>
+          Self expression through the MUSIC<br>
+          How to move to the MUSIC<br>
+          The passion and character of DANCE
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a id='contact'></a>
+{% include contact-form.html %}
