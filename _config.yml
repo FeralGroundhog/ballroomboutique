@@ -16,17 +16,16 @@
 title: Ballroom Boutique
 
 # This is the place to set up the contact form recipient
-#email: dance@ballroomboutique.net
-email: tony@pulickal.net
+email: dance@ballroomboutique.net
+#email: tony@pulickal.net
 
 description: > # this means to ignore newlines until "baseurl:"
   We teach people to dance for their wedding day, making sure they have an
   amazing FIRST DANCE. We don't teach just steps, we ensure our couples really
   enjoy their FIRST DANCE every step of the way.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ballroomboutique.net" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: tonypulickal
-#github_username:  feralgroundhog
+url: "http://www.ballroomboutique.net" # the base hostname & protocol for your site, e.g. http://example.com
+
 
 # Build settings
 markdown: kramdown
