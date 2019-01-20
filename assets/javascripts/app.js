@@ -164,43 +164,43 @@ jQuery(document).foundation();
 
     });
 
-    $('form#contact_form').validate({
-      messages: { },
-      submitHandler: function(form) {
-        $.ajax({
-          type: 'POST',
-          url: "https://formspree.io/" + $('input[name="recipient"]', form)[0].value,
-          data: $(form).serialize(),
-          dataType: "json",
-          success: function(data) {
-            if(data.success) {
-              $(form).trigger('reset');
-              $('#thanks').show().removeClass('hide').fadeOut(5000);
-            }
-          }
-        });
-        return false;
-      }
-    });
+//    $('form#contact_form').validate({
+//      messages: { },
+//      submitHandler: function(form) {
+//        $.ajax({
+//          type: 'POST',
+//          url: "https://formspree.io/" + $('input[name="recipient"]', form)[0].value,
+//          data: $(form).serialize(),
+//          dataType: "json",
+//          success: function(data) {
+//            if(data.success) {
+//              $(form).trigger('reset');
+//              $('#thanks').show().removeClass('hide').fadeOut(5000);
+//            }
+//          }
+//        });
+//        return false;
+//      }
+//    });
 
-    $('form#newsletter_form').validate({
-      messages: { },
-      submitHandler: function(form) {
-        $.ajax({
-          type: 'POST',
-          url: "https://formspree.io/" + $('input[name="recipient"]', form)[0].value,
-          data: $(form).serialize(),
-          dataType: "json",
-          success: function(data) {
-            if(data.success) {
-              $(form).trigger('reset');
-              $('#signup_success').show().removeClass('hide').fadeOut(5000);
-            }
-          }
-        });
-        return false;
-      }
-    });
+//    $('form#newsletter_form').validate({
+//      messages: { },
+//      submitHandler: function(form) {
+//        $.ajax({
+//          type: 'POST',
+//          url: "https://formspree.io/" + $('input[name="recipient"]', form)[0].value,
+//          data: $(form).serialize(),
+//          dataType: "json",
+//          success: function(data) {
+//            if(data.success) {
+//              $(form).trigger('reset');
+//              $('#signup_success').show().removeClass('hide').fadeOut(5000);
+//            }
+//          }
+//        });
+//        return false;
+//      }
+//    });
 
     if($('.masonry-container').length > 0) {
 
