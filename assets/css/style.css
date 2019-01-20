@@ -4378,6 +4378,8 @@ body {
     height: auto;
     max-height: 600px; }
 
+  .section-header.alt.navy h2, .full.profile div p.navy { color: #FFF; }
+
   .section #footer {
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
@@ -4558,11 +4560,15 @@ body {
 
   .left-half > p, .left-half > .section-header h2 { color: #000028 !important; }
 
+  .section-header.alt.navy h2, .full.profile div p.navy { color: #000028; }
+
   .right-half, .left-half {
     width: 100%;
     left: 0;
     padding: 60px 60px 0 60px;
     background: none; }
+
+  .section-header.alt { text-align: center; }
 
   .full.profile#portrait-donatas {
     background-image: none;
