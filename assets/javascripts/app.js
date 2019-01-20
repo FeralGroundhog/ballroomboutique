@@ -157,7 +157,7 @@ jQuery(document).foundation();
       var scroll = $(window).scrollTop();
 
       if ( scroll >= 1 ) {
-        $('body').addClass('shrink');
+        $('body').addClass('f-topbar-fixed shrink');
       } else {
         $('body').removeClass('shrink');
       }

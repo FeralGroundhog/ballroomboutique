@@ -4810,6 +4810,9 @@ body {
   .section #footer {
     position: relative; } }
 @media only screen and (max-width: 480px) {
+  #main.top-shift {
+    margin-top: 0; }
+
   .section-title h2 {
     font-size: 36px;
   }
