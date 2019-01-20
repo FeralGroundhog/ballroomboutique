@@ -10,6 +10,7 @@ Jekyll-based static site for Ballroom Boutique, a NYC-based ballroom dance compa
 
 ## HEADER/LANDING
 - TODO random-load background for mobile
+- DONE fix missing navbar after mobile scroll animation
 
 
 ## PROFILE
