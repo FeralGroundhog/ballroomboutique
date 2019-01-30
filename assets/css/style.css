@@ -2000,7 +2000,7 @@ body {
 
 /* Slider */
 /*div.fullscreen.homepage .slick-slider { border-right: #B78656 20px solid; }*/
-div.fullscreen.homepage .slick-slider .slide img { min-height: 800px; width: auto; }
+div.fullscreen.homepage .slick-slider .slide img { min-height: 800px; width: 100%; }
 
 .slick-slider {
   position: relative;
