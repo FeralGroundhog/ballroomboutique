@@ -1,0 +1,227 @@
+---
+layout: default
+onepage: true
+
+main_slider:
+  - /assets/images/ballroomboutique/main-slider/main-slider-01.jpg
+  - /assets/images/ballroomboutique/main-slider/main-slider-02.jpg
+  - /assets/images/ballroomboutique/main-slider/main-slider-03.jpg
+  - /assets/images/ballroomboutique/main-slider/main-slider-04.jpg
+  - /assets/images/ballroomboutique/main-slider/main-slider-05.jpg
+
+clients:
+  - path: _clients/brit-and-john.md
+    style: wide
+  - path: _clients/jess-and-john.md
+  - path: _clients/marcin-and-alison.md
+  - path: _clients/sharon-and-scott.md
+    style: wide
+  - path: _clients/minnie-and-john.md
+  - path: _clients/skye-and-tony.md
+  - path: _clients/eugenia-and-john.md
+    style: wide
+  - path: _clients/john-and-brit.md
+  - path: _clients/john-and-minnie.md
+  - path: _clients/scott-and-sharon.md
+  - path: _clients/tony-and-skye.md
+
+testimonials:
+  - name: Minnie B.
+    date: 10/09/2018
+    text: "If you are at all interested in taking dance lessons for your wedding, hire Donatas immediately!"
+  - name: Eric F.
+    date: 09/12/2018
+    text: "I'm the last person in the world who thought I would have enjoyed taking dance lessons - but he actually made it fun."
+  - name: Sharon R.
+    date: 08/12/2017
+    text: "My son and future daughter-in-law had a wonderful experience creating their first dance. Not only did they look beautiful together on the dance floor, but they enjoyed the process so much, they are continuing dance lessons post-wedding!"
+---
+<a id='top'></a>
+<div class='full no-padding parallax'>
+  <div class='fullscreen homepage'>
+    <div class='mod modBoxedSlider' data-timeout='1500'>
+      <div class='slides'>
+        {% for image in page.main_slider %}
+          <div class='slide'>
+            <img alt="BALLROOM BOUTIQUE" src="{{ image | relative_url }}">
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div id="mobile-background"></div>
+    <div class="overlay"></div>
+    <div class='layer'>
+      <h1 class='thin' id="homepage-title">
+         <span class="fir">Take your wedding</span><br/>
+         <span class="sec">dance from ordinary to</span><br/>
+         <span class="thir">extraordinary!</span>
+      </h1>
+      <ul class="title-badges">
+        <li class='badge'>
+          <a href="https://www.theknot.com/marketplace/ballroom-boutique-dance-company-new-york-ny-1048513">
+            <img src='{{ "/assets/images/ballroomboutique/footer-knot.png" | relative_url }}' alt="As Seen on The Knot">
+          </a>
+        </li>
+        <li class='badge'>
+          <a href="https://www.theknot.com/marketplace/ballroom-boutique-dance-company-new-york-ny-1048513">
+            <img src='{{ "/assets/images/ballroomboutique/footer-knot-best.png" | relative_url }}' alt="Knot Best of 2019">
+          </a>
+        </li>
+        <li class='badge'>
+          <a href="https://www.weddingwire.com/biz/ballroom-boutique-dance-company-new-york/b6ae3fcf70f16291.html">
+            <img src='{{ "/assets/images/ballroomboutique/footer-wedding-wire.png" | relative_url }}' alt="Wedding Wire Rated Business">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<a id='about'></a>
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      <div class="section-title">
+        <p class="small-title">About Us</p>
+        <h2>
+          Spend more time in<br>
+          each other's arms
+        </h2>
+        <p class="big-size">
+          We teach people to dance for their wedding day, making sure they have an amazing <em>first dance</em>. Focusing on more than just steps, we ensure couples truly enjoy every step of the way
+        </p>
+        <p class="big-size">
+          We can help with any aspect of dancing at your wedding! In addition to your first dance, we can also create your father-daughter dance, wedding entrance choreography, and group wedding dances such as family or wedding party dances. Should you have something in mind, <em>talk to us!</em>
+        </p>
+        <div class="two spacing"></div>
+        <img src="{{ "/assets/images/ballroomboutique/ornament.png" | relative_url }}" alt="Ballroom Boutique">
+      </div>
+    </div>
+    <div class="two spacing"></div>
+  </div>
+</div>
+
+<a id='dance-promo'></a>
+<div class='full' style="background-color: #010425;">
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      <div class="section-title">
+        <p class="small-title">Testimonials</p>
+        <h3 class="white">"Learn to dance and use that skill for the rest of your life" <em>~Donatas Nacajus</em></h3>
+      </div>
+      <div class='mod modBoxedSlider modTestimonials' id="testimonials" data-timeout='5000'>
+        <div class="items">
+          {% for testimonial in page.testimonials %}
+          <div class="slide">
+            <p class="white quote">{{ testimonial.text }}</p>
+            <p class="white centered-text author">{{ testimonial.name }} - {{ testimonial.date }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a id='instructors'></a>
+<div class="full profile no-padding" id="portrait-donatas">
+  <div class="right-half">
+    <div class="portrait-circle" id="circle-donatas">
+      <img src="{{ "/assets/images/ballroomboutique/circle-donatas.png" | relative_url }}">
+    </div>
+    <div class="two spacing"></div>
+    <div class="section-header alt navy">
+      <h2>Donatas Nacajus</h2>
+    </div>
+    <p class="navy">Born in Lithuania, Donatas has been dancing since he was seven years old and has not stopped since. In his youth, he competed and won numerous dance competitions around the world, including the National Dance Sport Championship <em>(twice)</em>. In 1998, he represented the Lithuanian National Dance Team's World Youth Division Dance Sport Championship held in Russia.</p>
+    <p class="navy">Donatas graduated from the Academy of Physical Education in the fields of Ballroom & Latin Dance as well as Physical Education. He studied under legendary instructors like Michael and Vicky Barrs, Richard Gleave, Janet Gleave and many others.</p>
+    <div class="two spacing"></div>
+  </div>
+</div>
+
+<div class="full profile flip no-padding" id="portrait-ly">
+  <div class="left-half">
+    <div class="portrait-circle" id="circle-ly">
+      <img src="{{ "/assets/images/ballroomboutique/circle-ly.png" | relative_url }}">
+    </div>
+    <div class="two spacing"></div>
+    <div class="section-header alt white">
+      <h2>Ly Nguyen Nacajus</h2>
+    </div>
+    <p class="light">Born in Vietnam and trained in England, Ly is a Latin and Ballroom dance instructor for the biggest studios in New York and New Jersey. She passionately brings her knowledge &amp; experiences to the dance floor, helping those wishing to dance socially or competitively. Ly believes in having fun while making dreams a reality.</p>
+    <div class="two spacing"></div>
+  </div>
+</div>
+
+<a id='client-gallery'></a>
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      <div class="section-title">
+        <p class="small-title">Gallery</p>
+        <h2>Date nights with your <em>honey?</em></h2>
+        <p class="big-size">
+          Take the opportunity to spend more time in each other's arms while preparing for your <em>first dance!</em>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='full no-padding' id="client-gallery-thumbs">
+  <div class='mod modMasonryGallery'>
+    <ul class='gallery'>
+
+      {% for item in page.clients %}
+
+        {% assign client = site.clients | where:"path",item.path | first %}
+
+        {% if item.style == 'wide' %}
+          {% assign class = 'wide' %}
+          {% assign width = 1000 %}
+          {% assign height = 350 %}
+        {% else %}
+          {% assign class = '' %}
+          {% assign width = 500 %}
+          {% assign height = 350 %}
+        {% endif %}
+
+        <li class="{{class}}">
+          <!-- disable jinja-rendered linking <a href='client.url | relative_url'> -->
+            <a>
+            <img width="{{width}}" height="{{height}}" alt="" src="{{ client.thumbnail | relative_url }}" />
+            <div class='overlay'>
+              <div class='thumb-info'>
+                <h3>{{ client.title | upcase }}</h3>
+                <p>{{ client.date | date: "%B %Y" }}</p>
+              </div>
+            </div>
+          </a>
+        </li>
+
+      {% endfor %}
+
+    </ul>
+  </div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-8 columns large-centered'>
+      <div class="section-title">
+        <p class="small-title">Social Dancing</p>
+        <h2>Welcome to an Amazing World of <em>Ballroom Dancing</em></h2>
+        <p class="big-size">
+          Our job and commitment as your teachers is to help your dance
+          ability grow so that you can enjoy the most wonderful feeling of<br>
+          Self expression through the MUSIC<br>
+          How to move to the MUSIC<br>
+          The passion and character of DANCE
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a id='contact'></a>
+{% include contact-form.html %}

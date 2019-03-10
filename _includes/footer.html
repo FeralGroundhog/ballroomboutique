@@ -1,0 +1,87 @@
+<div class="full no-padding dark">
+  <div id="footer" class='centered-text'>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="row">
+          <div class="large-12 columns">
+            <img src='{{ "/assets/images/ballroomboutique/BB_footer.png" | relative_url }}' alt="Ballroom Boutique">
+            <div class="two spacing"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns footer-contact">
+            <p><a href="https://goo.gl/maps/aC7zCeBcLWK2">37 West 26th Street, 9th Floor / Between 6th Ave & Broadway</a><br>
+            Tel: <a href="tel:+16462439793">646 243 9793</a><br>
+            Email: <a href="mailto:dance@ballroomboutique.net">dance@ballroomboutique.net</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 large-offset-3 medium-8 medium-offset-2 small-12 columns">
+              <p class="gold"><em>Sign up for our newsletter!</em></p>
+              <form id="newsletter_form" class="dark" method="POST" action="https://formspree.io/dance@ballroomboutique.net">
+                <div class='large-12 columns'>
+                  <p id='signup_success'>Thanks for signing up!</p>
+                </div>
+                <div class="large-12 columns">
+                  <input class="required email" name="email" placeholder="EMAIL" type="text">
+                  <input class='required' name='_subject' placeholder='SUBJECT' type='hidden' value="Ballroom Boutique: Newsletter Signup">
+                  <input name="recipient" type="hidden" value="{{ site.email }}" />
+                  <input class="button" type="submit" value="SIGN UP">
+                </div>
+              </form>
+              <div class="two spacing"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class='large-12 columns'>
+            <ul class="big-social">
+              <li><a href='https://www.facebook.com/ballroom80boutique/'><i class='fa fa-facebook'></i></a></li>
+              <li><a href='https://www.instagram.com/ballroomboutique/'><i class='fa fa-instagram'></i></a></li>
+              <li><a href='skype:donatasnyc'><i class='fa fa-skype'></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns centered-text" id="copyright">
+            <h4>©{{site.time | date: "%Y" }} Ballroom <span class="gold">/</span> Boutique. All rights reserved.</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <ul class='footer-nav'>
+            {% for item in site.data.nav %}
+              <li>
+                {% assign first = item.path | truncate:1,'' %}
+
+                {% if first != '#' %}
+                  {% assign href = item.path | relative_url %}
+                {% elsif page.onepage %}
+                  {% assign href = item.path %}
+                {% else %}
+                  {% assign href = 'index.html' | append:item.path | relative_url %}
+                {% endif %}
+
+                <a href="{{ href }}">{{ item.name }}</a>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% for path in site.data.assets.js %}
+
+  {%- if path contains '://' -%}
+    {%- assign src = path -%}
+  {%- else -%}
+    {%- assign src = path | relative_url -%}
+  {%- endif -%}
+
+  <script src="{{ src }}" type="text/javascript"></script>
+{% endfor %}
