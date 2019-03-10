@@ -1,4 +1,6 @@
 # ballroomboutique
+[![Build Status](https://travis-ci.org/FeralGroundhog/ballroomboutique.svg?branch=master)](https://travis-ci.org/FeralGroundhog/ballroomboutique)
+
 Jekyll-based static site for Ballroom Boutique, a NYC-based ballroom dance company
 
 # Changelog
