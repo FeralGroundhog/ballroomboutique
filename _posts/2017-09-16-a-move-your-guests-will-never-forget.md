@@ -2,7 +2,7 @@
 layout: post
 title: "A move your guests will never forget!"
 images:
-  - /assets/images/@stock/blog-3.jpg
+  - /assets/images/ballroomboutique/blog/example-2.jpg
 author: Donatas
 categories:
   - first-dance

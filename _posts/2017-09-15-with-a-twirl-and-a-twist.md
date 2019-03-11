@@ -2,7 +2,8 @@
 layout: post
 title: "With a twirl and a twist"
 images:
-  - /assets/images/@stock/blog-4.jpg
+  - /assets/images/ballroomboutique/blog/example-1.jpg
+  - /assets/images/ballroomboutique/blog/example-3.jpg
 author: Donatas
 categories:
   - first-dance

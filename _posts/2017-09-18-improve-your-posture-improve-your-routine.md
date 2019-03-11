@@ -2,8 +2,7 @@
 layout: post
 title: "Improve your posture, improve your routine"
 images:
-  - /assets/images/@stock/blog-1.jpg
-  - /assets/images/@stock/blog-2.jpg
+  - /assets/images/ballroomboutique/blog/example-3.jpg
 author: Donatas
 categories:
   - first-dance
