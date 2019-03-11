@@ -796,6 +796,16 @@ nav.top-bar.onepage section.top-bar-section ul li a {
     #menu-toggler a i {
       color: #FFF; }
 
+body.clients #menu-toggler a, body.clients #menu-toggler a i, body.clients .top-bar-section li:not(.has-form) a:not(.button) { color: #000 !important; }
+body.clients #menu-toggler a:hover, body.clients .top-bar-section li:not(.has-form) a:not(.button):hover { color: #B78656 !important; }
+body.clients.shrink #menu-toggler a, body.clients.shrink #menu-toggler a i, body.clients.shrink .top-bar-section li:not(.has-form) a:not(.button) { color: #FFF !important; }
+body.clients.shrink #menu-toggler a:hover, body.clients.shrink .top-bar-section li:not(.has-form) a:not(.button):hover { color: #B78656 !important; }
+
+body.blog #menu-toggler a, body.blog #menu-toggler a i, body.blog .top-bar-section li:not(.has-form) a:not(.button) { color: #000 !important; }
+body.blog #menu-toggler a:hover, body.blog .top-bar-section li:not(.has-form) a:not(.button):hover { color: #B78656 !important; }
+body.blog.shrink #menu-toggler a, body.blog.shrink #menu-toggler a i, body.blog.shrink .top-bar-section li:not(.has-form) a:not(.button) { color: #FFF !important; }
+body.blog.shrink #menu-toggler a:hover, body.blog.shrink .top-bar-section li:not(.has-form) a:not(.button):hover { color: #B78656 !important; }
+
 .closed {
   display: none; }
 
