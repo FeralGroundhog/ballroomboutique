@@ -166,7 +166,7 @@ body.page-template-default .top-bar {
   color: #ccc;
 }
 
-.default .contain-to-grid.transparent, .blog .contain-to-grid.transparent {
+.default .contain-to-grid.transparent, /*.blog .contain-to-grid.transparent*/ {
   background: #000;
 }
 
