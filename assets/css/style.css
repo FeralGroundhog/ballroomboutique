@@ -1,5 +1,3 @@
----
----
 @charset "UTF-8";
 /*-----------------------------------
 [Table of Contents]
@@ -1287,9 +1285,9 @@ form input.error, form textarea.error {
     border-bottom: 1px solid #f0f0f0;
     padding: 10px 0; }
   .links a {
-    color: #999; }
+    color: #000028; }
     .links a:hover {
-      color: #333; }
+      color: #EDB713; }
 
 .links.categories li a, .links.tags li a {
   text-transform: capitalize;

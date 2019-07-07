@@ -187,17 +187,24 @@ body.posts .modBlogPost.big p {
   color: #333;
 }
 
-.modBlogPost.big .info a {
-  color: #478547;
+.modBlogPost.big .info a, .modBlogPost .content p > a {
+  color: #000028;
   letter-spacing: 1px;
+  text-decoration: underline;
 }
+  .modBlogPost.big .info a:hover, .modBlogPost .content p > a:hover {
+    color: #EDB713;
+    text-decoration: none; 
+  }
 
 .modBlogPost.big .button.boxed {
-  color: #478547;
-  border-color: #478547;
+  color: #000028;
+  border-color: #B78656;
+  text-decoration: none;
 }
 
 .modBlogPost.big .button.boxed:hover {
+  color: #B78656;
   background-color: transparent;
 }
 
@@ -207,6 +214,10 @@ body.posts .modBlogPost.big p {
 
 .modBlogPost.big h2 {
   font-size: 3.028575rem;
+}
+
+.modBlogPost h3 a {
+  text-decoration: none;
 }
 
 .modBlogPost h3::after {
