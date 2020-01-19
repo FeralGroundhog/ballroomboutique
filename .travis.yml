@@ -1,18 +1,20 @@
 language:
-  - ruby
+- ruby
 rvm:
-  - 2.4
+- 2.4
 install: gem install jekyll bundler s3_website && bundle install
 script: bundle exec jekyll build
-#after_success: s3_website push
 branches:
   only:
   - master
   - release
 deploy:
   provider: s3
-  access_key_id: <%= ENV['S3_ACCESS_KEY_ID'] %>
-  secret_access_key: <%= ENV['S3_SECRET_KEY'] %>
-  bucket: "fs-s3-ballroomboutique-staging"
-  skip_cleanup: true
-  region: "us-east-1"
+  access_key_id: AKIAV6DJCKGN7D6GY5WN
+  secret_access_key:
+    secure: M9D2rKTwY7S1d1Z6IohTEqdJdSHEbyTmyMnTM3GE56eVPu5HEonGnO29PAStaSAs/chWVI5A92NILAqhWz5KEffgzhjvrsK+JczWMypuPcSrxWqk68tTkqJicVakgjYp463jdLqL/ue/GhasxF5WqNaLBCyNFdfdg73mRCjvMZqfCzmkBFxm7yxJ+x6jt6q2A5Xu5tPiAwsqX5FEHRHPJIZHNIQ60cec/b+6aTbPcKEI10z13FSYEA7A18F1p781jgrzFjxIBmSlc4aNowrcjr5u4cm/gw2iqP6591tn0Jh7P//5mUgIbrhTA7rX5JRc75FxMSMiYNTOY6FskJlL4LasUxNir8wrNmginmbh9oCTbj6EnVQwemQHqUKWMRPxZPhLgL4LP8/SSyKE2ZTO3JRlL3jCAacy8pFv6ocvUjuIhKMSIv0ahsBCmKdLS3umevdCwf7CgQm9IYxspKfPvkletu4IC/vKGbWHArCzPLkALM67SQ8TIB5xMFEWoVweDd87VCGmfubACiC17STkcMna0F4p+6YyZc4yHESlGsy90ojNk0ICz6BHXw+kZEcy0Z5pZYVd6x33N1nJ3hlxRuJBipfmgobt+2Ve92FTuvJWXavEFfryDLogQNKmLnqLuSz8ngBuB9P2JyLajD1ZDbCNNfhroK8Bz8C606oGtog=
+  bucket: fs-s3-ballroomboutique-staging
+  local-dir: _site/
+  acl: public_read
+  on:
+    repo: FeralGroundhog/ballroomboutique
