@@ -1,13 +1,18 @@
 language:
   - ruby
-  - java
-jdk: openjdk8
 rvm:
   - 2.4
 install: gem install jekyll bundler s3_website && bundle install
 script: bundle exec jekyll build
-after_success: s3_website push
+#after_success: s3_website push
 branches:
   only:
   - master
   - release
+deploy:
+  provider: s3
+  access_key_id: <%= ENV['S3_ACCESS_KEY_ID'] %>
+  secret_access_key: <%= ENV['S3_SECRET_KEY'] %>
+  bucket: "fs-s3-ballroomboutique-staging"
+  skip_cleanup: true
+  region: "us-east-1"
