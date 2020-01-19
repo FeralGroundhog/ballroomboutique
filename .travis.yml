@@ -1,4 +1,7 @@
-language: ruby
+language:
+  - ruby
+  - java
+jdk: openjdk8
 rvm:
   - 2.4
 install: gem install jekyll bundler s3_website && bundle install
