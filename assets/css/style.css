@@ -555,7 +555,7 @@ ul.shortcode-list {
 
 .button.boxed.yellow:hover {
   color: #B78656;
-  background: #000028;
+  background: transparent; 
   }
 
 /*Top bar */
@@ -1345,7 +1345,7 @@ form input.error, form textarea.error {
     -moz-transition-duration: 0.5s;
     transition-duration: 0.5s; }
   form#newsletter_form input[type="submit"]:hover {
-      color: #edb713;
+      color: #B78656;
       border: 2px solid #B78656;
       background-color: transparent; }
     #footer .footer-contact {
