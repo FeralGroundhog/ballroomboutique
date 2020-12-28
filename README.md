@@ -1,10 +1,10 @@
 # ballroomboutique
-[![Build Status](https://travis-ci.org/FeralGroundhog/ballroomboutique.svg?branch=master)](https://travis-ci.org/FeralGroundhog/ballroomboutique)
+![Build Status](https://github.com/FeralGroundhog/ballroomboutique/workflows/Build%20and%20deploy%20Jekyll%20site%20to%20S3/badge.svg?branch=master)
 
 Jekyll-based static site for Ballroom Boutique, a NYC-based ballroom dance company
 
 # Changelog
-[REV 6] (coming next)
+[STAGING](http://fs-s3-ballroomboutique-staging.s3-website-us-east-1.amazonaws.com)
 
 
 [REV 5](http://fs-ballroomboutique-staging-rev5.s3-website-us-east-1.amazonaws.com)
