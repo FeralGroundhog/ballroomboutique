@@ -5,6 +5,8 @@ on:
     branches:
       - master
       - release
+    paths-ignore:
+      - '**/README.md'
 
 jobs:
   jekyll:
