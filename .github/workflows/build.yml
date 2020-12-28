@@ -6,7 +6,9 @@ on:
       - master
       - release
     paths-ignore:
+      - 'README.md'
       - '**/README.md'
+      - '.github/workflows/**' 
 
 jobs:
   jekyll:
