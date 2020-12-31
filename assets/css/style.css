@@ -1348,13 +1348,8 @@ form input.error, form textarea.error {
       color: #B78656;
       border: 2px solid #B78656;
       background-color: transparent; }
-    #footer .footer-contact {
-      text-align: center;
-      padding: 0 50px; }
-      #footer .footer-contact p, #footer .footer-contact a {
-        color: #FFF; }
-      #footer .footer-contact a:hover {
-        color: #B78656; }
+  #footer .footer-contact p, #footer .footer-contact a { color: #FFF; }
+    #footer .footer-contact a:hover { color: #B78656; }
     #footer #copyright { padding: 10px 0; }
     #footer #copyright h4, #footer ul.footer-nav li {
       font-weight: normal;
